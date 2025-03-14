@@ -2,7 +2,7 @@ const Hero = () => (
   <section 
     id="home"
     className="h-screen bg-cover bg-center flex flex-col justify-center items-start text-left px-6 md:px-12 "
-    style={{ backgroundImage: "url('public/assets/Hero.png')" }}
+    style={{ backgroundImage: "url('/assets/Hero.png')" }}
   >
     <div className="bg-white bg-opacity-10 p-6 md:p-8 rounded-lg shadow-lg max-w-lg w-full">
   <h2 className="text-4xl md:text-4xl font-bold text-[#1E3240] mb-4 leading-tight">
