@@ -10,30 +10,30 @@ const projects = [
     image: "/assets/project1.png",
     description: "A modern apartment with sea views and 24/7 security.",
   },
-  {
-    id: 2,
-    title: "Smart Villa",
-    price: "$400,000",
-    location: "Victoria Island, Lagos",
-    image: "/assets/project2.png",
-    description: "A fully automated villa with smart home features.",
-  },
-  {
-    id: 3,
-    title: "Family Duplex",
-    price: "$180,000",
-    location: "Ikoyi, Lagos",
-    image: "/assets/project3.png",
-    description: "A spacious duplex perfect for families with kids.",
-  },
-  {
-    id: 4,
-    title: "bungalow",
-    price: "$100,000",
-    location: "Victoria Island, Lagos",
-    image: "/assets/project4.png",
-    description: "A fully automated villa with smart home features.",
-  },
+  // {
+  //   id: 2,
+  //   title: "Smart Villa",
+  //   price: "$400,000",
+  //   location: "Victoria Island, Lagos",
+  //   image: "/assets/project2.png",
+  //   description: "A fully automated villa with smart home features.",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Family Duplex",
+  //   price: "$180,000",
+  //   location: "Ikoyi, Lagos",
+  //   image: "/assets/project3.png",
+  //   description: "A spacious duplex perfect for families with kids.",
+  // },
+  // {
+  //   id: 4,
+  //   title: "bungalow",
+  //   price: "$100,000",
+  //   location: "Victoria Island, Lagos",
+  //   image: "/assets/project4.png",
+  //   description: "A fully automated villa with smart home features.",
+  // },
 ];
 
 const OngoingProjects = () => {
@@ -43,7 +43,7 @@ const OngoingProjects = () => {
     <section id="projects" className="py-16 bg-gray-100">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1E3240] mb-10">
-          Ongoing Projects
+          Our Recent Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

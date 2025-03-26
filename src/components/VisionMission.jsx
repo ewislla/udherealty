@@ -23,9 +23,7 @@ const VisionMission = () => (
               <span className="text-4xl text-[#AFD4E2] mr-2">“</span> VISION
             </h4>
             <p className="text-lg text-gray-700 mt-2 leading-relaxed">
-              To become a leading real estate company that transforms communities, 
-              empowers individuals through smart property investments, and contributes 
-              to sustainable housing solutions for all.
+           To dominate high-rise construction with unmatched speed, strength, and innovation shaping the future of real estate with structures that stand the test of time.
             </p>
           </div>
 
@@ -35,9 +33,7 @@ const VisionMission = () => (
               <span className="text-4xl text-[#AFD4E2]  mr-2">“</span>
               MISSION</h4>
             <p className="text-lg text-gray-700 mt-2 leading-relaxed">
-              To provide high-quality, affordable, and innovative real estate solutions, 
-              making homeownership and property investment accessible to everyone. We are 
-              committed to excellence, integrity, and creating long-term value for our clients.
+  We build with purpose delivering cutting edge, durable, and efficient real estate solutions that redefine skylines, maximize value, and set new industry standards.
             </p>
           </div>
         </div>
