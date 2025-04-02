@@ -6,7 +6,8 @@ const Hero = () => (
   >
     <div className="bg-white bg-opacity-10 p-6 md:p-8 rounded-lg shadow-lg max-w-lg w-full">
   <h2 className="text-4xl md:text-4xl font-bold text-[#1E3240] mb-4 leading-tight">
-  Building Faster. Building Stronger.
+  Build Better, <br/>
+  Build With Trust. 
   </h2>
   <p className="text-lg md:text-xl text-[#1E3240] mb-4">
     We specialize in constructing High-rise infrastructure with top-quality materials and rapid execution.
