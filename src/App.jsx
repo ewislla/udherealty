@@ -20,6 +20,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
+         <Analytics />
     </>
   );
 }
