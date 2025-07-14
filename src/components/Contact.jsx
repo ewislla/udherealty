@@ -40,35 +40,126 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto flex flex-col md:flex-row items-center">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <div className="container mx-auto px-6 lg:px-12">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            Get In Touch
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Ready to Start Your
+            <span className="block text-transparent bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text">
+              Property Journey?
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Whether you're buying your first home or expanding your investment portfolio, 
+            our team is here to guide you every step of the way.
+          </p>
+        </div>
+        
+      <div className="flex flex-col lg:flex-row items-start gap-12">
         <form 
           onSubmit={handleSubmit} 
-          className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-lg"
+          className="w-full lg:w-2/3 bg-white p-8 rounded-2xl shadow-2xl border border-gray-100"
         >
-          <h3 className="text-3xl font-bold mb-6 text-center">Contact Us</h3>
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">Send us a message</h3>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-            <input name="firstName" type="text" placeholder="First name" required className="border p-2 rounded" />
-            <input name="lastName" type="text" placeholder="Last name" required className="border p-2 rounded" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <input 
+              name="firstName" 
+              type="text" 
+              placeholder="First name" 
+              required 
+              className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
+            />
+            <input 
+              name="lastName" 
+              type="text" 
+              placeholder="Last name" 
+              required 
+              className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
+            />
           </div>
 
-          <div className="mb-4">
-            <input name="email" type="email" placeholder="Email address" required className="border p-2 rounded w-full" />
+          <div className="mb-6">
+            <input 
+              name="email" 
+              type="email" 
+              placeholder="Email address" 
+              required 
+              className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
+            />
           </div>
 
-          <div className="mb-4">
-            <textarea name="message" placeholder="Message" required className="border p-2 rounded w-full"></textarea>
+          <div className="mb-6">
+            <textarea 
+              name="message" 
+              placeholder="Tell us about your property needs..." 
+              required 
+              rows="5"
+              className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
+            ></textarea>
           </div>
 
           <button 
             type="submit" 
-            className="bg-[#1E3240] text-white py-2 px-6 rounded hover:bg-[#AFD4E2] w-full"
+            className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-4 px-8 rounded-lg font-semibold text-lg hover:from-emerald-600 hover:to-emerald-700 w-full transition-all duration-300 shadow-lg hover:shadow-xl"
             disabled={loading}
           >
-            {loading ? 'Sending...' : 'Send'}
+            {loading ? 'Sending Message...' : 'Send Message'}
           </button>
         </form>
+        
+        {/* Contact Information */}
+        <div className="w-full lg:w-1/3 space-y-8">
+          <div className="bg-gradient-to-br from-emerald-50 to-blue-50 p-8 rounded-2xl border border-emerald-200">
+            <h4 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h4>
+            
+            <div className="space-y-4">
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <span className="text-white text-sm">📍</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Visit Our Office</div>
+                  <div className="text-gray-600 text-sm">Beside Goin Town Hall, Alamleyeseigha Express Road, Amassoma, Bayelsa</div>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <span className="text-white text-sm">📞</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Call Us</div>
+                  <div className="text-gray-600 text-sm">+234 913 013 6839</div>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                  <span className="text-white text-sm">✉️</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-gray-900">Email Us</div>
+                  <div className="text-gray-600 text-sm">udherealtylimited@gmail.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Response Promise</h4>
+            <p className="text-gray-600 text-sm mb-4">
+              We respond to all inquiries within 2 hours during business hours.
+            </p>
+            <div className="text-emerald-600 font-semibold text-sm">
+              ⚡ Average response time: 45 minutes
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   );
