@@ -6,7 +6,6 @@ import TrustSection from "./components/TrustSection";
 import TeamCredentials from "./components/TeamCredentials";
 import FinalCTA from "./components/FinalCTA";
 import Testimonials from "./components/Testimonials";
-import FinalCTA from "./components/FinalCTA";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -24,7 +23,6 @@ function App() {
       <TeamCredentials />
       <Testimonials />
       <About />
-      <FinalCTA />
       <Contact />
       <FinalCTA />
       <Footer />
