@@ -44,20 +44,6 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#1E3240] mb-4">
-            Start Your Real Estate Journey
-          </h2>
-          <p className="text-xl text-[#1E3240] max-w-2xl mx-auto">
-            Ready to experience professional, transparent real estate service? 
-            Let's discuss your property goals.
-          </p>
-        </div>
-        
-        <div className="max-w-2xl mx-auto">
-          <form 
-            onSubmit={handleSubmit} 
-            className="bg-[#F8FAFC] p-8 rounded-2xl shadow-lg"
-          >
-            <h3 className="text-2xl font-bold mb-6 text-center text-[#1E3240]">Get Your Free Consultation</h3>
             Ready to Start Your
             <span className="block text-transparent bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text">
               Property Journey?
@@ -69,71 +55,47 @@ const Contact = () => {
           </p>
         </div>
         
-      <div className="flex flex-col lg:flex-row items-start gap-12">
-        <form 
-          onSubmit={handleSubmit} 
-          className="w-full lg:w-2/3 bg-white p-8 rounded-2xl shadow-2xl border border-gray-100"
-        >
-          <h3 className="text-2xl font-bold mb-6 text-gray-900">Send us a message</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <input 
-              name="firstName" 
-              type="text" 
-              placeholder="First name" 
-              required 
-              className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
-            />
-            <input 
-              name="lastName" 
-              type="text" 
-              placeholder="Last name" 
-              required 
-              className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
-            />
-          </div>
-
-          <div className="mb-6">
-            <input 
-              name="email" 
-              type="email" 
-              placeholder="Email address" 
-              required 
-              className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div className="flex flex-col lg:flex-row items-start gap-12">
+          <form 
+            onSubmit={handleSubmit} 
+            className="w-full lg:w-2/3 bg-white p-8 rounded-2xl shadow-2xl border border-gray-100"
+          >
+            <h3 className="text-2xl font-bold mb-6 text-gray-900">Send us a message</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <input 
                 name="firstName" 
                 type="text" 
                 placeholder="First name" 
                 required 
-                className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all" 
+                className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
               />
               <input 
                 name="lastName" 
                 type="text" 
                 placeholder="Last name" 
                 required 
-                className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all" 
+                className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
               />
             </div>
-            <textarea 
-            <div className="mb-4">
+
+            <div className="mb-6">
               <input 
                 name="email" 
                 type="email" 
                 placeholder="Email address" 
                 required 
-                className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all" 
+                className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
               />
             </div>
-              rows="5"
+
             <div className="mb-6">
               <textarea 
                 name="message" 
                 placeholder="Tell us about your property goals..." 
                 required 
                 rows="4"
-                className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all resize-none"
+                className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
               ></textarea>
             </div>
 
@@ -149,60 +111,58 @@ const Contact = () => {
               No obligation • Professional advice • Completely free
             </p>
           </form>
-        </div>
         
-        {/* Contact Information */}
-        <div className="w-full lg:w-1/3 space-y-8">
-          <div className="bg-gradient-to-br from-emerald-50 to-blue-50 p-8 rounded-2xl border border-emerald-200">
-            <h4 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h4>
-            
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="text-white text-sm">📍</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Visit Our Office</div>
-                  <div className="text-gray-600 text-sm">Beside Goin Town Hall, Alamleyeseigha Express Road, Amassoma, Bayelsa</div>
-                </div>
-              </div>
+          {/* Contact Information */}
+          <div className="w-full lg:w-1/3 space-y-8">
+            <div className="bg-gradient-to-br from-emerald-50 to-blue-50 p-8 rounded-2xl border border-emerald-200">
+              <h4 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h4>
               
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="text-white text-sm">📞</span>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-sm">📍</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">Visit Our Office</div>
+                    <div className="text-gray-600 text-sm">Beside Goin Town Hall, Alamleyeseigha Express Road, Amassoma, Bayelsa</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Call Us</div>
-                  <div className="text-gray-600 text-sm">+234 913 013 6839</div>
+                
+                <div className="flex items-start">
+                  <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-sm">📞</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">Call Us</div>
+                    <div className="text-gray-600 text-sm">+234 913 013 6839</div>
+                  </div>
                 </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="text-white text-sm">✉️</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Email Us</div>
-                  <div className="text-gray-600 text-sm">udherealtylimited@gmail.com</div>
+                
+                <div className="flex items-start">
+                  <div className="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <span className="text-white text-sm">✉️</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">Email Us</div>
+                    <div className="text-gray-600 text-sm">udherealtylimited@gmail.com</div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
-            <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Response Promise</h4>
-            <p className="text-gray-600 text-sm mb-4">
-              We respond to all inquiries within 2 hours during business hours.
-            </p>
-            <div className="text-emerald-600 font-semibold text-sm">
-              ⚡ Average response time: 45 minutes
+            
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Response Promise</h4>
+              <p className="text-gray-600 text-sm mb-4">
+                We respond to all inquiries within 2 hours during business hours.
+              </p>
+              <div className="text-emerald-600 font-semibold text-sm">
+                ⚡ Average response time: 45 minutes
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
-  )
   );
 };
 

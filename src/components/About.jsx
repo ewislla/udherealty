@@ -11,6 +11,8 @@ const About = () => (
             and unwavering commitment to client success.
           </p>
         </div>
+      </div>
+
       {/* Text Section */}
       <div className="w-full lg:w-1/2 text-left">
         <div className="inline-flex items-center bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -20,31 +22,30 @@ const About = () => (
         <h3 className="text-4xl font-bold text-gray-900 mb-6">
           Building Trust in Nigerian
           <span className="block text-transparent bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text">
-            Real Estate Since 2009
+            Real Estate Since 2024
           </span>
         </h3>
         
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          At Udhe Realty Limited, we understand that buying property in Nigeria can feel overwhelming - especially for diaspora investors. That's why we've spent over 15 years building the most transparent, secure, and client-focused real estate company in the country.
+          At Udhe Realty Limited, we understand that buying property in Nigeria can feel overwhelming - especially for diaspora investors. That's why we've founded the most transparent, secure, and client-focused real estate company in the country.
         </p>
         
         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-          From our headquarters in Bayelsa to serving clients across Lagos, Abuja, and internationally, we've facilitated over ₦50 billion in property transactions while maintaining a 98% client satisfaction rate.
-
+          From our headquarters in Bayelsa to serving clients across Lagos, Abuja, and internationally, we're committed to facilitating secure property transactions while maintaining the highest client satisfaction standards.
         </p>
         
         <div className="grid grid-cols-2 gap-6 mt-8">
           <div className="text-center p-4 bg-white rounded-xl shadow-lg">
-            <div className="text-2xl font-bold text-emerald-600">2,500+</div>
-            <div className="text-gray-600 text-sm">Families Served</div>
+            <div className="text-2xl font-bold text-emerald-600">100%</div>
+            <div className="text-gray-600 text-sm">Legal Compliance</div>
           </div>
           <div className="text-center p-4 bg-white rounded-xl shadow-lg">
-            <div className="text-2xl font-bold text-blue-600">₦50B+</div>
-            <div className="text-gray-600 text-sm">Properties Sold</div>
+            <div className="text-2xl font-bold text-blue-600">24/7</div>
+            <div className="text-gray-600 text-sm">Client Support</div>
           </div>
         </div>
         
-        <p className="text-[#1E3240] text-lg leading-relaxed mb-6">
+        <p className="text-[#1E3240] text-lg leading-relaxed mb-6 mt-6">
           Our team combines extensive expertise in real estate, legal compliance, and technology 
           to serve middle-class Nigerians and diaspora investors with the highest standards of service.
         </p>
@@ -55,12 +56,8 @@ const About = () => (
           ownership in Nigeria.
         </p>
       </div>
-
     </div>
   </section>
-        <h3 className="text-4xl font-bold text-[#1E3240] mb-4">About Udhe Realty Limited</h3>
-        <p className="text-[#1E3240] text-lg leading-relaxed mb-6">
-          We are Nigeria's newest premium real estate company, founded on the principles of transparency, 
-          professionalism, and client success. Our mission is to transform how Nigerians experience 
-          property transactions, both locally and internationally.
-)
+);
+
+export default About;

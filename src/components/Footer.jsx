@@ -9,8 +9,8 @@ const Footer = () => (
             UDHE REALTY LIMITED
           </h4>
           <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
-            Nigeria's most trusted real estate company, serving families and investors 
-            with transparency, security, and exceptional results since 2009.
+            Nigeria's newest premium real estate company, serving families and investors 
+            with transparency, security, and exceptional results.
           </p>
           
           <div className="space-y-3">
@@ -35,7 +35,6 @@ const Footer = () => (
           <ul className="space-y-3">
             <li><a href="#home" className="text-gray-300 hover:text-emerald-400 transition-colors text-sm">Home</a></li>
             <li><a href="#services" className="text-gray-300 hover:text-emerald-400 transition-colors text-sm">Services</a></li>
-            <li><a href="#testimonials" className="text-gray-300 hover:text-emerald-400 transition-colors text-sm">Success Stories</a></li>
             <li><a href="#about" className="text-gray-300 hover:text-emerald-400 transition-colors text-sm">About Us</a></li>
             <li><a href="#contact" className="text-gray-300 hover:text-emerald-400 transition-colors text-sm">Contact</a></li>
           </ul>
@@ -66,8 +65,8 @@ const Footer = () => (
               <a href="https://www.instagram.com/udhe_realty_limited?igsh=YWI4ZmN0NzIwaWJh" className="bg-pink-600 p-3 rounded-lg hover:bg-pink-700 transition-colors">
                 <span className="text-white text-sm">Instagram</span>
               </a>
-              <a href="#" className="bg-gray-700 p-3 rounded-lg hover:bg-gray-600 transition-colors">
-                <span className="text-white text-sm">TikTok</span>
+              <a href="https://wa.me/+2349130136839" className="bg-green-600 p-3 rounded-lg hover:bg-green-700 transition-colors">
+                <span className="text-white text-sm">WhatsApp</span>
               </a>
             </div>
           </div>
@@ -92,41 +91,40 @@ const Footer = () => (
       <div className="border-t border-gray-700 pt-8 mb-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
-            <div className="text-2xl font-bold text-emerald-400">2,500+</div>
-            <div className="text-gray-400 text-sm">Happy Families</div>
+            <div className="text-2xl font-bold text-emerald-400">100%</div>
+            <div className="text-gray-400 text-sm">Legal Compliance</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-blue-400">₦50B+</div>
-            <div className="text-gray-400 text-sm">Properties Sold</div>
-          </div>
-        <p className="mb-2">📍 Beside Goin Town Hall, Alamleyeseigha Express Road, Amassoma, Bayelsa</p>
-        <p className="mb-2">📞 +234 913 013 6839</p>
-            <div className="text-gray-400 text-sm">Years Experience</div>
+            <div className="text-2xl font-bold text-blue-400">24/7</div>
+            <div className="text-gray-400 text-sm">Client Support</div>
           </div>
           <div>
-            <div className="text-2xl font-bold text-amber-400">98%</div>
-            <div className="text-gray-400 text-sm">Client Satisfaction</div>
+            <div className="text-2xl font-bold text-purple-400">2024</div>
+            <div className="text-gray-400 text-sm">Founded</div>
           </div>
-          <li><a href="#services" className="hover:text-gray-200">Services</a></li>
-          <li><a href="#trust" className="hover:text-gray-200">Why Us</a></li>
-          <li><a href="#team" className="hover:text-gray-200">Team</a></li>
+          <div>
+            <div className="text-2xl font-bold text-amber-400">Premium</div>
+            <div className="text-gray-400 text-sm">Service Quality</div>
+          </div>
+        </div>
+      </div>
       
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
         <div className="text-sm text-gray-400 mb-4 md:mb-0">
           © {new Date().getFullYear()} Udhe Realty Limited. All rights reserved.
-        <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
+        </div>
         <div className="flex space-x-6 text-sm text-gray-400">
           <a href="#" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-emerald-400 transition-colors">Terms of Service</a>
-          <li><a href="https://wa.me/+2349130136839" className="hover:text-gray-200">WhatsApp</a></li>
-    <div className="text-center mt-8 pt-8 border-t border-gray-600 text-sm text-gray-300">
+        </div>
       </div>
-      <p className="mt-2">Nigeria's Premier Real Estate Experience</p>
+      
+      <div className="text-center mt-8 pt-8 border-t border-gray-600 text-sm text-gray-300">
+        <p className="mt-2">Nigeria's Premier Real Estate Experience</p>
+      </div>
     </div>
   </footer>
 );
 
 export default Footer;
-
-)
