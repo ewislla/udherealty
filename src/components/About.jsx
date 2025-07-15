@@ -63,3 +63,4 @@ const About = () => (
           We are Nigeria's newest premium real estate company, founded on the principles of transparency, 
           professionalism, and client success. Our mission is to transform how Nigerians experience 
           property transactions, both locally and internationally.
+)
