@@ -48,8 +48,8 @@ const Header = () => {
             <a href="#home" className={`block py-2 px-4 font-medium transition-colors duration-300 ${
               isScrolled 
                 ? 'text-gray-700 hover:text-emerald-600' 
-                : 'text-white hover:text-emerald-400'
-            }`}>
+            <a href="#services" className="block py-2 px-4 hover:text-blue-600">
+              Services
               Home
             </a>
           </li>
@@ -71,8 +71,13 @@ const Header = () => {
               Success Stories
             </a>
           </li>
+            <a href="#trust" className="block py-2 px-4 hover:text-blue-600">
+              Why Us
+            </a>
+          </li>
           <li>
-            <a href="#about" className={`block py-2 px-4 font-medium transition-colors duration-300 ${
+            <a href="#team" className="block py-2 px-4 hover:text-blue-600">
+              Team
               isScrolled 
                 ? 'text-gray-700 hover:text-emerald-600' 
                 : 'text-white hover:text-emerald-400'

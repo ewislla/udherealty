@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import TrustSection from "./components/TrustSection";
+import TeamCredentials from "./components/TeamCredentials";
+import FinalCTA from "./components/FinalCTA";
 import Testimonials from "./components/Testimonials";
 import FinalCTA from "./components/FinalCTA";
 import About from "./components/About";
@@ -19,10 +21,12 @@ function App() {
       <Hero />
       <Services />
       <TrustSection />
+      <TeamCredentials />
       <Testimonials />
       <About />
       <FinalCTA />
       <Contact />
+      <FinalCTA />
       <Footer />
       <Analytics />
     </>

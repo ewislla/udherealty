@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16">
+  <footer className="bg-[#1E3240] text-white py-12">
     <div className="container mx-auto px-6 lg:px-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         
@@ -99,28 +99,30 @@ const Footer = () => (
             <div className="text-2xl font-bold text-blue-400">₦50B+</div>
             <div className="text-gray-400 text-sm">Properties Sold</div>
           </div>
-          <div>
-            <div className="text-2xl font-bold text-purple-400">15+</div>
+        <p className="mb-2">📍 Beside Goin Town Hall, Alamleyeseigha Express Road, Amassoma, Bayelsa</p>
+        <p className="mb-2">📞 +234 913 013 6839</p>
             <div className="text-gray-400 text-sm">Years Experience</div>
           </div>
           <div>
             <div className="text-2xl font-bold text-amber-400">98%</div>
             <div className="text-gray-400 text-sm">Client Satisfaction</div>
           </div>
-        </div>
-      </div>
+          <li><a href="#services" className="hover:text-gray-200">Services</a></li>
+          <li><a href="#trust" className="hover:text-gray-200">Why Us</a></li>
+          <li><a href="#team" className="hover:text-gray-200">Team</a></li>
       
       {/* Bottom Bar */}
       <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
         <div className="text-sm text-gray-400 mb-4 md:mb-0">
           © {new Date().getFullYear()} Udhe Realty Limited. All rights reserved.
-        </div>
+        <h4 className="font-bold text-lg mb-4">Connect With Us</h4>
         <div className="flex space-x-6 text-sm text-gray-400">
           <a href="#" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-emerald-400 transition-colors">Terms of Service</a>
-          <a href="#" className="hover:text-emerald-400 transition-colors">Legal Compliance</a>
-        </div>
+          <li><a href="https://wa.me/+2349130136839" className="hover:text-gray-200">WhatsApp</a></li>
+    <div className="text-center mt-8 pt-8 border-t border-gray-600 text-sm text-gray-300">
       </div>
+      <p className="mt-2">Nigeria's Premier Real Estate Experience</p>
     </div>
   </footer>
 );

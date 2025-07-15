@@ -40,13 +40,24 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-white">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-            Get In Touch
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+    <section id="contact" className="py-20 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-[#1E3240] mb-4">
+            Start Your Real Estate Journey
+          </h2>
+          <p className="text-xl text-[#1E3240] max-w-2xl mx-auto">
+            Ready to experience professional, transparent real estate service? 
+            Let's discuss your property goals.
+          </p>
+        </div>
+        
+        <div className="max-w-2xl mx-auto">
+          <form 
+            onSubmit={handleSubmit} 
+            className="bg-[#F8FAFC] p-8 rounded-2xl shadow-lg"
+          >
+            <h3 className="text-2xl font-bold mb-6 text-center text-[#1E3240]">Get Your Free Consultation</h3>
             Ready to Start Your
             <span className="block text-transparent bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text">
               Property Journey?
@@ -89,27 +100,56 @@ const Contact = () => {
               placeholder="Email address" 
               required 
               className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors" 
-            />
-          </div>
-
-          <div className="mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <input 
+                name="firstName" 
+                type="text" 
+                placeholder="First name" 
+                required 
+                className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all" 
+              />
+              <input 
+                name="lastName" 
+                type="text" 
+                placeholder="Last name" 
+                required 
+                className="border border-gray-300 p-4 rounded-lg focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all" 
+              />
+            </div>
             <textarea 
-              name="message" 
-              placeholder="Tell us about your property needs..." 
-              required 
+            <div className="mb-4">
+              <input 
+                name="email" 
+                type="email" 
+                placeholder="Email address" 
+                required 
+                className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all" 
+              />
+            </div>
               rows="5"
-              className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
-            ></textarea>
-          </div>
+            <div className="mb-6">
+              <textarea 
+                name="message" 
+                placeholder="Tell us about your property goals..." 
+                required 
+                rows="4"
+                className="border border-gray-300 p-4 rounded-lg w-full focus:ring-2 focus:ring-[#205D75] focus:border-transparent outline-none transition-all resize-none"
+              ></textarea>
+            </div>
 
-          <button 
-            type="submit" 
-            className="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-4 px-8 rounded-lg font-semibold text-lg hover:from-emerald-600 hover:to-emerald-700 w-full transition-all duration-300 shadow-lg hover:shadow-xl"
-            disabled={loading}
-          >
-            {loading ? 'Sending Message...' : 'Send Message'}
-          </button>
-        </form>
+            <button 
+              type="submit" 
+              className="bg-[#205D75] text-white py-4 px-8 rounded-lg font-semibold text-lg hover:bg-[#1E3240] w-full transition-all duration-300 disabled:opacity-50"
+              disabled={loading}
+            >
+              {loading ? 'Sending...' : 'Get My Free Consultation'}
+            </button>
+            
+            <p className="text-center text-sm text-[#1E3240] mt-4">
+              No obligation • Professional advice • Completely free
+            </p>
+          </form>
+        </div>
         
         {/* Contact Information */}
         <div className="w-full lg:w-1/3 space-y-8">
